@@ -1,9 +1,10 @@
-import { greet } from "./utils/greet";
+import PlaceEntry from "./PlaceEntry";
+import MainContent from "./MainContent"
 
 function App(): JSX.Element {
   return(
     <>
-    <PlaceEntry />
+    <MainContent />
     
     </>
   );
