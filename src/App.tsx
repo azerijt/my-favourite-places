@@ -1,5 +1,6 @@
 import PlaceEntry from "./PlaceEntry";
-import MainContent from "./MainContent"
+import MainContent from "./MainContent";
+import AppHeader from "./AppHeader";
 
 function App(): JSX.Element {
   return(

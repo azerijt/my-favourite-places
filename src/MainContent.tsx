@@ -25,7 +25,7 @@ function MainContent(): JSX.Element {
         title= {"El Rio Hostel"}
         placeName= {"Buritaca"}
         country= {"Colombia"}
-        image= {{image: "src/elrio.jpeg", alt: "A jungle riverside"}}
+        image= {{image: "https://cdn.theculturetrip.com/wp-content/uploads/2018/03/img_0669.jpg", alt: "A jungle riverside"}}
         link= {"https://goo.gl/maps/5rDmaHkQQTMKLWcR7"}
         text= {"A riverside hostel by the Carribean coast of Colombia"}
         />
