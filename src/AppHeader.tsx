@@ -1,4 +1,6 @@
 import NavItem from "./NavItem";
+import NavItem2 from "./NavItem2";
+
 
 
 function PageHeader(): JSX.Element {
@@ -12,7 +14,7 @@ function PageHeader(): JSX.Element {
         label="Mexico" />
         <NavItem
         label="Colombia" />
-        <NavItem
+        <NavItem2
         label="Spain" />
 
       </header>

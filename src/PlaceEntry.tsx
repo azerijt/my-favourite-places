@@ -1,5 +1,7 @@
 import { JsxElement } from "typescript";
 
+
+
 interface PlacesProps {
     title: string;
     placeName: string;
@@ -11,12 +13,12 @@ interface PlacesProps {
 
 function PlaceEntry(props: PlacesProps): JSX.Element {
     return(
-        <section>
-            <h2>{props.title}</h2>
-            <h3>{props.placeName}, {props.country}</h3>
-            <img src={props.image.image} alt ={props.image.alt}/><br/>
-            <a href={props.link}>view on google maps</a>
-            <p>{props.text}</p>
+        <section className="section">
+            <h2 className="title">{props.title}</h2>
+            <h3 className="country">{props.placeName}, {props.country}</h3>
+            <img className="image" src={props.image.image} alt ={props.image.alt}/><br/>
+            <a className="link"href={props.link}>view on google maps</a>
+            <p className="text">{props.text}</p>
 
         </section>
     )

@@ -2,14 +2,6 @@ interface NavItemProps {
     label: string;
   }
   
-  function NavItem(props: NavItemProps): JSX.Element {
-    return (
-      <>
-        <a href="#">{props.label.toUpperCase()}</a>
-        <span> | </span>
-      </>
-    );
-  }
   function NavItem2(props: NavItemProps): JSX.Element {
     return (
       <>
@@ -18,5 +10,5 @@ interface NavItemProps {
       </>
     );
   }
-  
-  export default NavItem;
+
+export default NavItem2;
