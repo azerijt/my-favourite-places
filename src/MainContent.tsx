@@ -4,7 +4,7 @@ export default MainContent;
 
 function MainContent(): JSX.Element {
   return (
-    <div className="main">
+    <div >
       <SectionReactComponent />
       {/* <PlaceEntry 
         title={"Georgian Bay"}

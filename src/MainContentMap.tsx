@@ -32,6 +32,7 @@ alt:"A jungle riverside",
 link:"https://goo.gl/maps/5rDmaHkQQTMKLWcR7",
 text:"A riverside hostel by the Carribean coast of Colombia"
 },
+
 {title:"Alhambra",
 placeName:"Granada",
 country:"Spain",
@@ -68,17 +69,25 @@ interface PlacesProps {
 //       </section>
 //     );
 
-function SectionReactComponent(): JSX.Element {
+function SectionReactComponent() {
   return (
-    <section className="section">
-      {arrayofObjects.map(
+      <div className="section">
+        {arrayofObjects.map(
         ({ title, placeName, country, image, alt, link, text }) => (
-          <h2 className="title" key={title}>
-            {title}
-          </h2>
-        )
-      )}
-      {arrayofObjects.map(
+    
+          [<h2 className="title" key={title}>{title}</h2>,
+          <h3 className="country" key={placeName}>{placeName}, {country}</h3>,
+          <a className="image" key={image}><img className="image" src={image}></img></a>,
+          <a className="link" key={link} href={link}><br />view on google maps</a>,
+          <p className="text" key={text}>{text}</p>]
+       
+        ))}
+        </div>
+  );
+        
+    }
+  
+      {/* {arrayofObjects.map(
         ({ title, placeName, country, image, alt, link, text }) => (
           <h3 className="country" key={placeName}>
             {placeName}, {country}
@@ -107,4 +116,4 @@ function SectionReactComponent(): JSX.Element {
       )}
     </section>
   );
-}
+} */}
