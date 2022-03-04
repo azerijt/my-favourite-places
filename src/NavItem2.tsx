@@ -5,7 +5,7 @@ interface NavItemProps {
   function NavItem2(props: NavItemProps): JSX.Element {
     return (
       <>
-        <a href="#">{props.label.toUpperCase()}</a>
+        <a className="nav" href="#">{props.label.toUpperCase()}</a>
       
       </>
     );

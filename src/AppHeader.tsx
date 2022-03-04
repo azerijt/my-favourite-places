@@ -5,9 +5,9 @@ import NavItem2 from "./NavItem2";
 
 function PageHeader(): JSX.Element {
     return (
-      <header>
-        <h1>Anna-Zeri's Favourite Places</h1>
-        <p>This is a list of my favourite places around the world.</p>
+      <header className="header">
+        <h1 id="head">Anna-Zeri's Favourite Places</h1>
+        <p className="text2">This is a list of my favourite places around the world.</p>
         <NavItem
         label="Canada" />
         <NavItem
@@ -16,6 +16,7 @@ function PageHeader(): JSX.Element {
         label="Colombia" />
         <NavItem2
         label="Spain" />
+      
 
       </header>
 

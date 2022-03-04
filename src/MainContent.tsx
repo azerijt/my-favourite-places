@@ -1,9 +1,10 @@
 import PlaceEntry from "./PlaceEntry";
 export default MainContent;
 
+
 function MainContent(): JSX.Element {
     return(
-        <>
+        <div className="main">
         <PlaceEntry 
         title={"Georgian Bay"}
         placeName={"Ontario"}
@@ -11,8 +12,9 @@ function MainContent(): JSX.Element {
         image={{image: "https://media.istockphoto.com/photos/clear-waters-in-a-gray-cliffed-cove-picture-id1208028811?k=20&m=1208028811&s=612x612&w=0&h=y7G6BVpX4bvtNCu6l1ItvUmReT0fCfJ_gVQlG3_2Kqc=", alt: "A clear blue lake"}}
         link={"https://goo.gl/maps/HcMaB3ypvZPtewHDA"}
         text={"Georgian bay is a clear blue bay in the Canadian side of Lake Huron."}
-        />
         
+        />
+        <p></p>
         <PlaceEntry 
         title= {"San Jose Del Pacifico"}
         placeName= {"Oaxaca"}
@@ -21,6 +23,7 @@ function MainContent(): JSX.Element {
         link= {"https://goo.gl/maps/33Vdzf695yPKqq4k9"}
         text= {"A town in the mountains in Oaxaca, near the Pacific coast."}
         />
+        <p></p>
         <PlaceEntry 
         title= {"El Rio Hostel"}
         placeName= {"Buritaca"}
@@ -29,6 +32,7 @@ function MainContent(): JSX.Element {
         link= {"https://goo.gl/maps/5rDmaHkQQTMKLWcR7"}
         text= {"A riverside hostel by the Carribean coast of Colombia"}
         />
+        <p></p>
         <PlaceEntry
         title= {"Alhambra"}
         placeName= {"Granada"}
@@ -37,7 +41,7 @@ function MainContent(): JSX.Element {
         link= {"https://goo.gl/maps/GeL9bkr8a6BQqNoF8"}
         text= {"The Alhambra is a remnant of the period of Islamic rule in the Iberian Peninsula (711–1492)."}
         /> 
-        </>
+        </div>
     
     )
 

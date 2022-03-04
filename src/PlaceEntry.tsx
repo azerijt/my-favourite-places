@@ -1,5 +1,5 @@
 import { JsxElement } from "typescript";
-
+import "./style.css";
 
 
 interface PlacesProps {
