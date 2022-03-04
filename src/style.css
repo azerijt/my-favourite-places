@@ -1,83 +1,72 @@
-.page{
-    background-color: ivory;
-    border-radius:25px;
+.page {
+  background-color: ivory;
+  border-radius: 25px;
 }
 
-.header{
-    background-color: ivory;
-    margin: auto;
-    border-radius:25px;
-    text-align: center;
-    padding-bottom: 25px;
-   
+.header {
+  background-color: ivory;
+  margin: auto;
+  border-radius: 25px;
+  text-align: center;
+  padding-bottom: 25px;
 }
-#head{
-    font-size: 40px;
-    color: rgb(27, 9, 60);
-    
-    padding-top: 25px;
-    
-}
-.text2{
-    font-size:larger;
-    color: rgb(44, 71, 75);
-}
-.nav{
-    color: rgb(57, 90, 125);
-}
-.span{
-    color:rgb(3, 25, 38);
-}
-.section{
-    background-color: rgb(153, 225, 217);
-    margin: auto;
-    border-radius: 20px;
-    
-    padding-top: 3px;
-    text-align: center;
-    padding-bottom: 25px;
-    align-content: center;
+#head {
+  font-size: 40px;
+  color: rgb(27, 9, 60);
 
+  padding-top: 25px;
+}
+.text2 {
+  font-size: larger;
+  color: rgb(44, 71, 75);
+}
+.nav {
+  color: rgb(57, 90, 125);
+}
+.span {
+  color: rgb(3, 25, 38);
+}
+.section {
+  background-color: rgb(153, 225, 217);
+  margin: auto;
+  border-radius: 20px;
+
+  padding-top: 3px;
+  text-align: center;
+  padding-bottom: 25px;
+  align-content: center;
 }
 
-.title{
-    color: rgb(27, 9, 60);
-    font-size: 60px;
+.title {
+  color: rgb(27, 9, 60);
+  font-size: 60px;
+}
+.country {
+  color: rgb(7, 30, 65);
+  font-size: 30px;
+}
+.image {
+  width: 450px;
+  height: 350px;
+  border-radius: 25px;
+  display: inline-block;
 
-}
-.country{
-    color: rgb(7, 30, 65);
-    font-size: 30px;
-   
-}
-.image{
-    width:450px;
-    height:350px;
-    border-radius: 25px;
-    display: inline-block;
-   
-    align-items: center;
-    padding-bottom: 15px;
-    
+  align-items: center;
+  padding-bottom: 15px;
 }
 
-.text{
-    font-size: 20px;
-    color: rgb(3, 25, 38);
-    
+.text {
+  font-size: 20px;
+  color: rgb(3, 25, 38);
 }
 
-.footer{
-    background-color: rgb(3, 25, 38);
-    text-align: center;
-    border-radius: 25px;
-    
-    
+.footer {
+  background-color: rgb(3, 25, 38);
+  text-align: center;
+  border-radius: 25px;
 }
-#foot{
-    color: ivory;
-    text-transform: uppercase;
-    font-size:small;
-
+#foot {
+  color: ivory;
+  text-transform: uppercase;
+  font-size: small;
 }
-   
