@@ -1,6 +1,19 @@
 import "./style.css";
 export default SectionReactComponent;
-const arrayofObjects = [
+
+interface PlacesProps {
+  title: string;
+  placeName: string;
+  country: string;
+  image: string;
+  alt: string ;
+  link: string;
+  text: string;
+}
+
+type simpleType = PlacesProps[];
+
+const arrayofObjects: simpleType = [
   {
     title: "Georgian Bay",
     placeName: "Ontario",
@@ -46,18 +59,12 @@ const arrayofObjects = [
   },
 ];
 
-interface PlacesProps {
-  title: string;
-  placeName: string;
-  country: string;
-  image: { image: string; alt: string };
-  link: string;
-  text: string;
-}
 
-function SectionReactComponent() {
+
+
+function SectionReactComponent(): JSX.Element {
   return (
-    <div>
+    <>
       {arrayofObjects.map(
         ({ title, placeName, country, image, alt, link, text }) => (
           <section className="section" key={title}>
@@ -68,7 +75,7 @@ function SectionReactComponent() {
               {placeName}, {country}
             </h3>
             <a className="image" key={image}>
-              <img className="image" src={image}></img>
+              <img className="image" src={image} alt=""></img>
             </a>
             <a className="link" key={link} href={link}>
               <br />
@@ -78,41 +85,11 @@ function SectionReactComponent() {
               {text}
             </p>
           </section>
+          
+        
         )
       )}
-    </div>
+    </>
   );
 }
 
-{
-  /* {arrayofObjects.map(
-        ({ title, placeName, country, image, alt, link, text }) => (
-          <h3 className="country" key={placeName}>
-            {placeName}, {country}
-          </h3>
-        )
-      )}
-      {arrayofObjects.map(
-        ({ title, placeName, country, image, alt, link, text }) => (
-          <a className="image" key={image}><img className="image" src={image}></img></a>
-        )
-      )}
-      <br />
-      {arrayofObjects.map(
-        ({ title, placeName, country, image, alt, link, text }) => (
-          <a className="link" key={link} href={link}>
-            view on google maps
-          </a>
-        )
-      )}
-      {arrayofObjects.map(
-        ({ title, placeName, country, image, alt, link, text }) => (
-          <p className="text" key={text}>
-            {text}
-          </p>
-        )
-      )}
-    </section>
-  );
-} */
-}

@@ -28,18 +28,16 @@
 }
 .section {
   background-color: rgb(153, 225, 217);
-  margin: auto;
+  margin:5%;
   border-radius: 20px;
-
-  padding-top: 3px;
   text-align: center;
-  padding-bottom: 25px;
   align-content: center;
 }
 
 .title {
   color: rgb(27, 9, 60);
   font-size: 60px;
+  padding-top: 20px;
 }
 .country {
   color: rgb(7, 30, 65);
@@ -58,6 +56,7 @@
 .text {
   font-size: 20px;
   color: rgb(3, 25, 38);
+  padding-bottom: 25px;
 }
 
 .footer {
