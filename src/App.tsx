@@ -1,19 +1,13 @@
-import PlaceEntry from "./PlaceEntry";
 import MainContent from "./MainContent";
 import AppHeader from "./AppHeader";
 import AppFooter from "./AppFooter";
 
-
-
-
 function App(): JSX.Element {
-  return(
+  return (
     <main className="page">
-    <AppHeader />
-    <MainContent />
-    <AppFooter />
-    
-    
+      <AppHeader />
+      <MainContent />
+      <AppFooter />
     </main>
   );
 }
