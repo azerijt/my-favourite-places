@@ -53,33 +53,20 @@ interface PlacesProps {
   text: string;
 }
 
-//   function PlaceEntry(props: PlacesProps): JSX.Element {
-//     return (
-//       <section className="section">
-//         <h2 className="title">{props.title}</h2>
-//         <h3 className="country">
-//           {props.placeName}, {props.country}
-//         </h3>
-//         <img className="image" src={props.image.image} alt={props.image.alt} />
-//         <br />
-//         <a className="link" href={props.link}>
-//           view on google maps
-//         </a>
-//         <p className="text">{props.text}</p>
-//       </section>
-//     );
-
 function SectionReactComponent() {
   return (
-      <div className="section">
+      <div >
         {arrayofObjects.map(
         ({ title, placeName, country, image, alt, link, text }) => (
+        <section className="section" key={title}>
+          
+          <h2 className="title" key={title}>{title}</h2>
+          <h3 className="country" key={placeName}>{placeName}, {country}</h3>
+          <a className="image" key={image}><img className="image" src={image}></img></a>
+          <a className="link" key={link} href={link}><br />view on google maps</a>
+          <p className="text" key={text}>{text}</p>
     
-          [<h2 className="title" key={title}>{title}</h2>,
-          <h3 className="country" key={placeName}>{placeName}, {country}</h3>,
-          <a className="image" key={image}><img className="image" src={image}></img></a>,
-          <a className="link" key={link} href={link}><br />view on google maps</a>,
-          <p className="text" key={text}>{text}</p>]
+        </section>
        
         ))}
         </div>
